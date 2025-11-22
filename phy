@@ -1,4 +1,4 @@
-# Program mengecek apakah dua kata merupakan anagram
++# Program mengecek apakah dua kata merupakan anagram
 def cek_anagram(kata1, kata2):
     return sorted(kata1) == sorted(kata2)
 
