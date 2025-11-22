@@ -1,0 +1,48 @@
+def tambah(a, b):
+    return a + b
+
+def kurang(a, b):
+    return a - b
+
+def kali(a, b):
+    return a * b
+
+def bagi(a, b):
+    if b == 0:
+        return "Error: Tidak bisa membagi dengan nol!"
+    return a / b
+
+def main():
+    print("=== Aplikasi Kalkulator Sederhana ===")
+    print("1. Tambah")
+    print("2. Kurang")
+    print("3. Kali")
+    print("4. Bagi")
+
+    pilihan = input("Pilih operasi (1-4): ")
+
+    if pilihan not in ["1", "2", "3", "4"]:
+        print("Pilihan tidak valid!")
+        return
+
+    angka1 = float(input("Masukkan angka pertama: "))
+    angka2 = float(input("Masukkan angka kedua: "))
+
+    if pilihan == "1":
+        hasil = tambah(angka1, angka2)
+        operasi = "+"
+    elif pilihan == "2":
+        hasil = kurang(angka1, angka2)
+        operasi = "-"
+    elif pilihan == "3":
+        hasil = kali(angka1, angka2)
+        operasi = "×"
+    elif pilihan == "4":
+        hasil = bagi(angka1, angka2)
+        operasi = "÷"
+
+    print(f"Hasil: {angka1} {operasi} {angka2} = {hasil}")
+
+
+# Memanggil fungsi utama
+main()
