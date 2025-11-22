@@ -1,0 +1,30 @@
+# Fungsi untuk menambahkan dua angka
+def tambah(angka1, angka2):
+  """
+  Fungsi ini menerima dua angka sebagai input dan mengembalikan jumlahnya.
+  """
+  hasil = angka1 + angka2
+  return hasil
+
+# Fungsi utama program
+def main():
+  """
+  Fungsi ini adalah titik masuk utama dari program.
+  """
+  # Meminta input dari pengguna
+  try:
+    angka_pertama = float(input("Masukkan angka pertama: "))
+    angka_kedua = float(input("Masukkan angka kedua: "))
+  except ValueError:
+    print("Input tidak valid. Masukkan angka yang benar.")
+    return
+
+  # Memanggil fungsi tambah untuk menghitung jumlah
+  jumlah = tambah(angka_pertama, angka_kedua)
+
+  # Menampilkan hasil
+  print("Jumlah dari", angka_pertama, "dan", angka_kedua, "adalah:", jumlah)
+
+# Memastikan bahwa fungsi main() dipanggil hanya ketika script dijalankan langsung
+if __name__ == "__main__":
+  main()
