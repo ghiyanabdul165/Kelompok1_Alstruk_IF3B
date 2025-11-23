@@ -1,5 +1,2 @@
-Program ini dimulai dengan membuat beberapa variabel sederhana, misalnya nama = "Budi", umur = 20, dan tinggi = 165.5. Setiap variabel dipakai sebagai tempat menyimpan informasi, dan Python otomatis mengenali jenis datanya—apakah itu teks, angka bulat, atau angka desimal.
-
-Setelah variabel dibuat, program mengecek tipe datanya menggunakan type(), hanya untuk memastikan bahwa nilai yang disimpan sudah sesuai. Jika ada data yang perlu diubah, misalnya angka yang harus digabungkan dengan teks, program akan mengubahnya terlebih dahulu, seperti umur_str = str(umur).
-
-Di bagian akhir, program menggunakan semua variabel tersebut untuk menampilkan kalimat ke layar, misalnya: “Halo, nama saya Budi dan umur saya 20 tahun.” Program berjalan dari atas ke bawah dengan urutan yang rapi sampai semua perintah selesai dijalankan.
+Program ini membuat beberapa variabel seperti a, x, dan panjang, lalu menampilkan nilainya. Setelah itu ditunjukkan contoh penamaan variabel yang benar, seperti nilai_y, juta 10, dan nilaiZ. Program kemudian mengubah nilai a dari 10 menjadi 7 dan menampilkan nya lagi. Lalu dibagian akhir, variabel b dibuat dengan menyalin nilai a, sehingga saat dicetak, b bernilai sama seperti a. 
+Program ini memperlihatkan cara menyimpan, mengubah, dan menyalin nilai variabel di python.
