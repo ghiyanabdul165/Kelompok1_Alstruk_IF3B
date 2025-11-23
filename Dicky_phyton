@@ -1,0 +1,40 @@
+# Tipe data Integer (bilangan bulat)
+jumlah_barang = 12
+print("nilai :", jumlah_barang)
+print("tipe  :", type(jumlah_barang))
+
+# Tipe data Float (bilangan desimal)
+berat_badan = 58.6
+print("nilai :", berat_badan)
+print("tipe  :", type(berat_badan))
+
+# Tipe data String (teks)
+nama_siswa = "Andi"
+print("nilai :", nama_siswa)
+print("tipe  :", type(nama_siswa))
+
+# Tipe data: Boolean hanya true atau fales
+is_online = True
+is_admin = False
+
+print("is_online :", is_online)
+print("tipe      :", type(is_online))
+
+print("is_admin  :", is_admin)
+print("tipe      :", type(is_admin))
+
+# Tipe data: Bilangan kompleks
+nilai_kompleks = 8 + 2j
+print("nilai :", nilai_kompleks)
+print("tipe  :", type(nilai_kompleks))
+
+# Tipe data C (ctypes)
+from ctypes import c_long, c_float
+
+angka_c_long = c_long(999999)
+print("nilai :", angka_c_long)
+print("tipe  :", type(angka_c_long))
+
+angka_c_float = c_float(7.25)
+print("nilai :", angka_c_float)
+print("tipe  :", type(angka_c_float))
