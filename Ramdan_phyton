@@ -1,0 +1,25 @@
+import turtle
+
+# Setup Layar
+t = turtle.Turtle()
+s = turtle.Screen()
+s.bgcolor('#262626') # Background gelap
+t.speed(0) # 0 = Kecepatan maksimum (agar tidak terlalu lama menunggu)
+
+# Setup Warna
+# 'light' dan 'green' saya gabung jadi 'lightgreen' agar error index hilang
+col = ('cyan', 'yellow', 'red', 'lightgreen') 
+
+# Mulai Menggambar
+for n in range(10): # Mengulang 10 lapis lingkaran
+    for x in range(8): # Membuat 8 kelopak per lapis
+        t.pencolor(col[n % 4]) # Mengganti warna setiap lapisan
+        for i in range(2):
+            t.pensize(2)
+            t.circle(80 + n * 20, 90) # Radius lingkaran makin membesar
+            t.lt(90)
+        t.lt(45) # Memutar sudut untuk kelopak berikutnya
+
+# Kode penutup wajib ditaruh di PALING BAWAH (di luar loop)
+t.hideturtle() # Menyembunyikan kursor panah saat selesai
+s.exitonclick()
